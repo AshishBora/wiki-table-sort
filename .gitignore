@@ -29,3 +29,6 @@ npm-debug.log*
 
 # Claude Code artifacts
 .claude/
+
+# Zip file used for upload to chrome web store
+upload.zip
