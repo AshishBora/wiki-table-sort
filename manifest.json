@@ -11,8 +11,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.wikipedia.org/w/index.php*action=edit*",
-        "*://*.wikipedia.org/wiki/*action=edit*"
+        "*://*.wikipedia.org/w/index.php*action=edit*"
       ],
       "js": [
         "table-parser.js",
