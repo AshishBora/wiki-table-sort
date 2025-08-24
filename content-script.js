@@ -112,20 +112,14 @@ class WikipediaSorterExtension {
             return;
         }
 
-        // Temporary simple approach - use browser prompt
-        const columnOptions = headers.map((h, i) => `${i}: ${h.text}`).join('\n');
-        const selectedColumn = prompt(`Select column to sort by (enter number):\n\n${columnOptions}`);
-        
-        if (selectedColumn !== null) {
-            const columnIndex = parseInt(selectedColumn);
-            if (columnIndex >= 0 && columnIndex < headers.length) {
-                const direction = confirm('Sort ascending? (Cancel for descending)');
-                console.log('User selected:', columnIndex, direction);
-                this.performSort(table, columnIndex, direction);
-            } else {
-                alert('Invalid column selection');
-            }
-        }
+        const panel = this.ui.createSortPanel(table, headers, (table, columnIndex, ascending) => {
+            console.log('Sort callback triggered:', columnIndex, ascending);
+            this.performSort(table, columnIndex, ascending);
+        });
+
+        const button = document.querySelector('.wikipedia-sort-button');
+        console.log('Button element:', button);
+        this.ui.showPanel(panel, button);
     }
 
     performSort(table, columnIndex, ascending) {

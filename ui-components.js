@@ -1,6 +1,7 @@
 class WikipediaSorterUI {
     constructor() {
         this.activePanel = null;
+        this.activeBackdrop = null;
         this.currentTable = null;
         this.onSortCallback = null;
     }
@@ -88,44 +89,53 @@ class WikipediaSorterUI {
         document.body.appendChild(panel);
         this.activePanel = panel;
 
-        const rect = button.getBoundingClientRect();
-        console.log('Button rect:', rect);
-        
+        // Position panel in center of screen for better visibility
         panel.style.position = 'fixed';
-        panel.style.top = (rect.bottom + 5) + 'px';
-        panel.style.left = rect.left + 'px';
-        panel.style.zIndex = '999999';
+        panel.style.top = '50%';
+        panel.style.left = '50%';
+        panel.style.transform = 'translate(-50%, -50%)';
+        panel.style.zIndex = '2147483647'; // Maximum z-index value
         panel.style.display = 'block';
         panel.style.visibility = 'visible';
         panel.style.opacity = '1';
+        panel.style.pointerEvents = 'auto';
 
-        console.log('Panel positioned at:', panel.style.top, panel.style.left);
+        console.log('Panel positioned at center of screen with max z-index');
 
-        setTimeout(() => {
-            const panelRect = panel.getBoundingClientRect();
-            const viewportWidth = window.innerWidth;
-            const viewportHeight = window.innerHeight;
+        // Add a semi-transparent backdrop
+        const backdrop = document.createElement('div');
+        backdrop.className = 'wikipedia-sorter-backdrop';
+        backdrop.style.position = 'fixed';
+        backdrop.style.top = '0';
+        backdrop.style.left = '0';
+        backdrop.style.width = '100%';
+        backdrop.style.height = '100%';
+        backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+        backdrop.style.zIndex = '2147483646';
+        backdrop.style.cursor = 'pointer';
+        
+        document.body.appendChild(backdrop);
+        this.activeBackdrop = backdrop;
 
-            if (panelRect.right > viewportWidth) {
-                panel.style.left = (viewportWidth - panelRect.width - 10) + 'px';
-            }
-
-            if (panelRect.bottom > viewportHeight) {
-                panel.style.top = (rect.top - panelRect.height - 5) + 'px';
-            }
-            
-            console.log('Panel final position:', panel.style.top, panel.style.left);
-        }, 0);
-
-        document.addEventListener('click', this.closePanel.bind(this));
+        // Close panel when clicking backdrop
+        backdrop.addEventListener('click', () => this.closePanel());
+        
+        // Prevent clicks on panel from closing it
+        panel.addEventListener('click', (e) => e.stopPropagation());
     }
 
     closePanel() {
         if (this.activePanel) {
             this.activePanel.remove();
             this.activePanel = null;
-            document.removeEventListener('click', this.closePanel.bind(this));
         }
+        
+        if (this.activeBackdrop) {
+            this.activeBackdrop.remove();
+            this.activeBackdrop = null;
+        }
+        
+        document.removeEventListener('click', this.closePanel.bind(this));
     }
 
     createSortButton() {
