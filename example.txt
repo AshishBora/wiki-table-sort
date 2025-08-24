@@ -1,0 +1,151 @@
+{{Short description|None}}
+{{Use American English|date=April 2023}}
+{{Use mdy dates|date=April 2023}}
+This is a '''list of eponyms of Nvidia GPU microarchitectures'''. The [[eponym]] in this case is the person after whom an architecture is named. Listed are the person, their portrait, their profession or areas of expertise, their birth year, their death year, their country of origin, the microarchitecture named after them, and the year of release of the GPU architecture.
+
+{| class="wikitable sortable"
+|+ Eponyms of Nvidia GPU microarchitectures
+|-
+! Eponym 
+! Profession 
+! Origin 
+! Architecture 
+! Release <br> year
+! {{Tooltip|Ref.|Reference(s)}}
+|-
+| style="text-align: center;" | [[File:Ampere_Andre_1825.jpg|frameless|175px]] <br> '''[[André-Marie Ampère]]''' <br> (1775–1836)
+| Physicist and mathematician
+| {{flagicon|France}} [[French people|French]]
+| style="text-align: center;" | [[Ampere (microarchitecture)|Ampere]]
+| style="text-align: center;" | 2020
+| style="text-align: center;" | <ref>{{cite web |last=Liu |first=Zhiye |date=December 9, 2019 |title=Hopper Might Be the Codename For Nvidia GPUs Succeeding Ampere |url=https://www.tomshardware.com/news/nvidia-hopper-gpu-graphics-card-architecture |website=Tom's Hardware |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:David Blackwell 1999 (re-scanned, cropped).jpg|frameless|175px]] <br> '''[[David Blackwell]]''' <br> (1919–2010)
+| Mathematician and statistician
+| {{Flagicon|United States}} [[Americans|American]]
+| style="text-align: center;" | [[Blackwell (microarchitecture)|Blackwell]]
+| style="text-align: center;" | 2024
+| style="text-align: center;" | <ref>{{cite web|last=Uchiyama|first=Kristin|date=March 18, 2024|title=NVIDIA Blackwell Platform Arrives to Power a New Era of Computing|url=https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing|website=Nvidia Newsroom|language=en-US|access-date=March 19, 2024}}</ref>
+|-
+| style="text-align: center;" | [[File:Headshot_of_Anders_Celsius.jpg|framless|175px]] <br> '''[[Anders Celsius]]''' <br> (1701–1744)
+| Physicist and astronomer
+| {{flagicon|Sweden}} [[Swedes|Swedish]]
+| style="text-align: center;" | [[Celsius (microarchitecture)|Celsius]]
+| style="text-align: center;" | 1999
+|
+|-
+| style="text-align: center;" | [[File:Marie_Curie_c._1920s.jpg|frameless|175px]] <br> '''[[Marie Curie]]''' <br> (1867–1934)
+| Physicist and chemist
+| {{ubl |{{flagicon|Poland}} [[Polish people|Polish]] |{{flagicon|France}} [[Poles in France|Naturalized French]]}}
+| style="text-align: center;" | [[Curie (microarchitecture)|Curie]]
+| style="text-align: center;" | 2004
+| style="text-align: center;" | <ref>{{cite web |last=Tyson |first=Mark |date=November 8, 2021 |title=The Roundup: Marie Curie's birthday tech news topup |url=https://www.club386.com/the-roundup-marie-curies-birthday-tech-news-topup/ |website=Club386 |language=en-GB |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Fahrenheit_small.jpg|frameless|175px]] <br> '''[[Daniel Gabriel Fahrenheit]]''' <br> (1686–1736)
+| Physicist
+| {{ubl|{{flagicon|Polish-Lithuanian Commonwealth}} [[Polish people|Polish]]|{{flagicon|Dutch Republic}} [[Dutch people|Naturalized Dutch]]}}
+| style="text-align: center;" |  Fahrenheit
+| style="text-align: center;" | 1998
+|
+|-
+| style="text-align: center;" | [[File:Enrico_Fermi_1943-49.jpg|frameless|175px]] <br> '''[[Enrico Fermi]]''' <br> (1901–1954)
+| Physicist
+| {{ubl |{{flagicon|Kingdom of Italy}} [[Italians|Italian]] |{{flagicon|United States}} [[Americans|Naturalized American]]}}
+| style="text-align: center;" | [[Fermi (microarchitecture)|Fermi]]
+| style="text-align: center;" | 2010
+| style="text-align: center;" | <ref>{{cite web |title=NVIDIA GT300 "Fermi" Detailed |url=https://www.techpowerup.com/104942/nvidia-gt300-fermi-detailed |website=TechPowerUp |language=en-US |date=September 30, 2009 |access-date=January 30, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Richard Feynman Nobel.jpg|frameless|247x247px]] <br> '''[[Richard Feynman]]''' <br> (1918–1988)
+|Theoretical physicist
+|{{Flagicon|United States}} [[Americans|American]]
+|style="text-align: center;" | [[Feynman (microarchitecture)|Feynman]]
+| style="text-align: center;" | 2028
+| style="text-align: center;" | <ref>{{Cite web |last=Mujtaba |first=Hassan |date=March 18, 2025 |title=NVIDIA Unveils Next-Gen Feynman GPU In Updated Roadmap, Arriving in 2028 With Next-Gen HBM Memory |url=https://wccftech.com/nvidia-next-gen-feynman-gpu-updated-roadmap-arriving-2028-next-gen-hbm-memory/ |archive-date= |access-date=March 21, 2025 |website=wccftech}}</ref>
+|-
+| style="text-align: center;" | [[File:Commodore_Grace_M._Hopper,_USN_(covered).jpg|frameless|175px]] <br> '''[[Grace Hopper]]''' <br> (1906–1992)
+| Computer scientist, mathematician, and United States Navy rear admiral
+| {{flagicon|United States}} [[Americans|American]]
+| style="text-align: center;" | [[Hopper (microarchitecture)|Hopper]]
+| style="text-align: center;" | 2022
+| style="text-align: center;" | <ref>{{cite web |last=Ridley |first=Jacob |date=January 31, 2022 |title=Nvidia is in a trademark clash for its next-gen GPU name, Hopper |url=https://www.pcgamer.com/nvidia-is-in-a-trademark-clash-for-its-next-gen-gpu-name-hopper/ |website=PC Gamer |language=en-US |access-date=April 5, 2023}}</ref> 
+|-
+| style="text-align: center;" | [[File:Baron_Kelvin_1906.jpg|frameless|175px]] <br> '''[[Lord Kelvin|William Thomson, 1st Baron Kelvin]]''' <br> (1824–1907)
+| Mathematician, mathematical physicist and engineer
+| {{flagicon|United Kingdom}} [[British people|British]]
+| style="text-align: center;" | [[Kelvin (microarchitecture)|Kelvin]]
+| style="text-align: center;" | 2001
+| style="text-align: center;" | 
+|-
+| style="text-align: center;" | [[File:JKepler.jpg|frameless|175px]] <br> '''[[Johannes Kepler]]''' <br> (1571–1630)
+| Astronomer, mathematician, astrologer, natural philosopher and writer on music
+| {{flagicon|Holy Roman Empire}} [[Germans|German]]
+| style="text-align: center;" | [[Kepler (microarchitecture)|Kepler]]
+| style="text-align: center;" | 2012
+| style="text-align: center;" | <ref>{{cite web |last1=Wilson |first1=Jason R. |date=October 12, 2021 |title=NVIDIA Ends Game Ready Driver Support for Kepler GeForce 600 & 700 Series GPU Family |url=https://wccftech.com/nvidia-ends-game-ready-driver-support-for-kepler-geforce-600-700-series-gpu-family/ |website=Wccftech |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Ada Lovelace portrait.jpg|frameless|175px]] <br> '''[[Ada Lovelace]]''' <br> (1815–1852)
+| Mathematician and writer
+| {{flagicon|England}} [[English people|English]]
+| style="text-align: center;" | [[Ada Lovelace (microarchitecture)|Ada <br> Lovelace]]
+| style="text-align: center;" | 2022
+| style="text-align: center;" | <ref>{{cite web |last1=Mujtaba |first1=Hassan |date=September 15, 2022 |title=NVIDIA's Next-Gen Ada Lovelace Gaming GPU Architecture For GeForce RTX 40 Series Confirmed |url=https://wccftech.com/nvidia-ada-lovelace-gpu-architecture-for-next-gen-geforce-rtx-40-gaming-gpus-confirmed/ |website=Wccftech |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:James_Clerk_Maxwell.png|frameless|175px]] <br> '''[[James Clerk Maxwell]]''' <br> (1831–1879)
+| Mathematician and scientist
+| {{flagicon|Scotland}} [[Scottish people|Scottish]]
+| style="text-align: center;" | [[Maxwell (microarchitecture)|Maxwell]]
+| style="text-align: center;" | 2014
+| style="text-align: center;" | <ref>{{cite web |last1=Nguyen |first1=Hubert |date=February 18, 2014 |title=NVIDIA Maxwell GPU For GeForce Cards |url=https://www.ubergizmo.com/2014/02/nvidia-maxwell-gpu-for-geforce-cards/ |website=Ubergizmo |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Blaise Pascal Versailles.JPG|frameless|175px]] <br> '''[[Blaise Pascal]]''' <br> (1623–1662)
+| Mathematician, physicist, inventor, philosopher, and Catholic writer
+| {{flagicon|France}} [[French people|French]]
+| style="text-align: center;" | [[Pascal (microarchitecture)|Pascal]]
+| style="text-align: center;" | 2016
+| style="text-align: center;" | <ref>{{cite web |last=Poeter |first=Damon |date=March 25, 2014 |title=Nvidia Reveals Pascal, a Future GPU Architecture |url=https://www.pcmag.com/news/nvidia-reveals-pascal-a-future-gpu-architecture |website=PCMag |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:William John Macquorn Rankine by Thomas Annan.jpg|frameless|175px]] <br> '''[[William Rankine]]''' <br> (1820–1872)
+| Mechanical engineer
+| {{flagicon|Scotland}} [[Scottish people|Scottish]]
+| style="text-align: center;" | [[Rankine (microarchitecture)|Rankine]]
+| style="text-align: center;" | 2003
+| style="text-align: center;" | 
+|-
+| style="text-align: center;" | [[File:Vera_Rubin_using_Kitt_Peak_National_Observatory's_36-inch_telescope.jpg|frameless|175px]] <br> '''[[Vera Rubin]]''' <br> (1928–2016)
+| Astronomer, Astrophysicist
+| {{Flagicon|United States}} [[Americans|American]]
+| style="text-align: center;" | [[Rubin (microarchitecture)|Rubin]]
+| style="text-align: center;" | 2026
+| style="text-align: center;" | <ref>{{cite web |last=Edwards |first=Benj |date=June 3, 2024 |title=Nvidia jumps ahead of itself and reveals next-gen "Rubin" AI chips in keynote tease |url=https://arstechnica.com/information-technology/2024/06/nvidia-jumps-ahead-of-itself-and-reveals-next-gen-rubin-ai-chips-in-keynote-tease/ |website=Ars Technica |language=en-US |access-date=June 12, 2024}}</ref>
+|-
+| style="text-align: center;" | [[File:Tesla circa 1890.jpeg|frameless|175px]] <br> '''[[Nikola Tesla]]''' <br> (1856–1943)
+| Inventor, electrical engineer, mechanical engineer, and futurist
+| {{flagicon|United States}} [[Serbian Americans|Serbian American]]
+| style="text-align: center;" | [[Tesla (microarchitecture)|Tesla]]
+| style="text-align: center;" | 2006
+| style="text-align: center;" | <ref>{{Cite tweet |author=NVIDIA |user=nvidia |date=July 10, 2017 |title=Happy Birthday to Nikola Tesla, an inspiring inventor and the namesake of our data center GPUs. He was born in 1856 #OnThisDay. |number=884537812866834433 |website=Twitter |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Alan Turing az 1930-as években.jpg|frameless|175px]] <br> '''[[Alan Turing]]''' <br> (1912–1954)
+| Mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist
+| {{flagicon|England}} [[English people|English]]
+| style="text-align: center;" | [[Turing (microarchitecture)|Turing]]
+| style="text-align: center;" | 2018
+| style="text-align: center;" | <ref>{{cite web |last=Hagedoorn |first=Hilbert |title=New NVIDIA GPU is named at Reuters, called Turing |url=https://www.guru3d.com/news-story/new-nvidia-gpu-is-named-at-reuterscalled-turing.html |website=Guru3D |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Alessandro_Volta.jpeg|frameless|175px]] <br> '''[[Alessandro Volta]]''' <br> (1745–1827)
+| Physicist, chemist
+| {{flagicon|Kingdom of Italy}} [[Italians|Italian]]
+| style="text-align: center;" | [[Volta (microarchitecture)|Volta]]
+| style="text-align: center;" | 2017
+| style="text-align: center;" | <ref>{{cite web |last=Prickett Morgan |first=Timothy |date=March 19, 2013 |title=Nvidia to stack up DRAM on future 'Volta' GPUs |url=https://www.theregister.com/2013/03/19/nvidia_gpu_roadmap_computing_update/ |website=The Register |language=en-US |access-date=April 5, 2023}}</ref>
+|}
+
+== References ==
+{{Reflist}}
+
+{{DEFAULTSORT:Eponyms of Nvidia GPU microarchitectures}}
+[[Category:Graphics microarchitectures]]
+[[Category:Lists of eponyms]]
+[[Category:Lists of code names]]
+[[Category:Nvidia graphics processors]]
+[[Category:Nvidia microarchitectures]]

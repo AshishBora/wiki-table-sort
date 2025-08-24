@@ -1,0 +1,31 @@
+# Debug files and logs
+debug/
+*.log
+
+# macOS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Node modules (if we add any build tools later)
+node_modules/
+npm-debug.log*
+
+# Claude Code artifacts
+.claude/

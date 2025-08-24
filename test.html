@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wikipedia Table Sorter Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .test-controls {
+            margin: 20px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wikipedia Table Sorter Extension Test</h1>
+    
+    <p>This page simulates a Wikipedia edit environment for testing the table sorter extension.</p>
+    
+    <div class="test-controls">
+        <button onclick="loadExampleTable()">Load Example Table</button>
+        <button onclick="testParser()">Test Parser</button>
+        <button onclick="testSorting()">Test Sorting</button>
+    </div>
+    
+    <textarea id="wpTextbox1" placeholder="Wikipedia table content will appear here..."></textarea>
+    
+    <div id="results" class="results" style="display: none;">
+        <h3>Test Results:</h3>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="table-parser.js"></script>
+    <script src="table-sorter.js"></script>
+    <script src="ui-components.js"></script>
+    <script>
+        const exampleTable = `{{Short description|None}}
+{{Use American English|date=April 2023}}
+{{Use mdy dates|date=April 2023}}
+This is a '''list of eponyms of Nvidia GPU microarchitectures'''. The [[eponym]] in this case is the person after whom an architecture is named. Listed are the person, their portrait, their profession or areas of expertise, their birth year, their death year, their country of origin, the microarchitecture named after them, and the year of release of the GPU architecture.
+
+{| class="wikitable sortable"
+|+ Eponyms of Nvidia GPU microarchitectures
+|-
+! Eponym 
+! Profession 
+! Origin 
+! Architecture 
+! Release <br> year
+! {{Tooltip|Ref.|Reference(s)}}
+|-
+| style="text-align: center;" | [[File:Ampere_Andre_1825.jpg|frameless|175px]] <br> '''[[André-Marie Ampère]]''' <br> (1775–1836)
+| Physicist and mathematician
+| {{flagicon|France}} [[French people|French]]
+| style="text-align: center;" | [[Ampere (microarchitecture)|Ampere]]
+| style="text-align: center;" | 2020
+| style="text-align: center;" | <ref>{{cite web |last=Liu |first=Zhiye |date=December 9, 2019 |title=Hopper Might Be the Codename For Nvidia GPUs Succeeding Ampere |url=https://www.tomshardware.com/news/nvidia-hopper-gpu-graphics-card-architecture |website=Tom's Hardware |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Tesla circa 1890.jpeg|frameless|175px]] <br> '''[[Nikola Tesla]]''' <br> (1856–1943)
+| Inventor, electrical engineer, mechanical engineer, and futurist
+| {{flagicon|United States}} [[Serbian Americans|Serbian American]]
+| style="text-align: center;" | [[Tesla (microarchitecture)|Tesla]]
+| style="text-align: center;" | 2006
+| style="text-align: center;" | <ref>{{Cite tweet |author=NVIDIA |user=nvidia |date=July 10, 2017 |title=Happy Birthday to Nikola Tesla, an inspiring inventor and the namesake of our data center GPUs. He was born in 1856 #OnThisDay. |number=884537812866834433 |website=Twitter |language=en-US |access-date=April 5, 2023}}</ref>
+|-
+| style="text-align: center;" | [[File:Marie_Curie_c._1920s.jpg|frameless|175px]] <br> '''[[Marie Curie]]''' <br> (1867–1934)
+| Physicist and chemist
+| {{ubl |{{flagicon|Poland}} [[Polish people|Polish]] |{{flagicon|France}} [[Poles in France|Naturalized French]]}}
+| style="text-align: center;" | [[Curie (microarchitecture)|Curie]]
+| style="text-align: center;" | 2004
+| style="text-align: center;" | <ref>{{cite web |last=Tyson |first=Mark |date=November 8, 2021 |title=The Roundup: Marie Curie's birthday tech news topup |url=https://www.club386.com/the-roundup-marie-curies-birthday-tech-news-topup/ |website=Club386 |language=en-GB |access-date=April 5, 2023}}</ref>
+|}
+
+== References ==
+{{Reflist}}`;
+
+        function loadExampleTable() {
+            document.getElementById('wpTextbox1').value = exampleTable;
+        }
+
+        function testParser() {
+            const textarea = document.getElementById('wpTextbox1');
+            const parser = new WikipediaTableParser();
+            const tables = parser.findTables(textarea.value);
+            
+            const output = document.getElementById('output');
+            const results = document.getElementById('results');
+            
+            output.textContent = `Found ${tables.length} tables\n\n` + 
+                JSON.stringify(tables, null, 2);
+            results.style.display = 'block';
+        }
+
+        function testSorting() {
+            const textarea = document.getElementById('wpTextbox1');
+            const parser = new WikipediaTableParser();
+            const sorter = new WikipediaTableSorter(parser);
+            const tables = parser.findTables(textarea.value);
+            
+            if (tables.length === 0) {
+                alert('No tables found! Load the example table first.');
+                return;
+            }
+            
+            const table = tables[0];
+            const sortedRows = sorter.sortTable(table, 4, true); // Sort by release year
+            const newContent = sorter.applySortToText(textarea.value, table, sortedRows);
+            
+            textarea.value = newContent;
+            
+            const output = document.getElementById('output');
+            const results = document.getElementById('results');
+            
+            output.textContent = 'Table sorted by Release Year (ascending)';
+            results.style.display = 'block';
+        }
+
+        // Load example on page load
+        window.onload = function() {
+            loadExampleTable();
+        };
+    </script>
+    
+    <!-- Load content script to test full functionality -->
+    <script src="content-script.js"></script>
+</body>
+</html>`
