@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "Sort Wikipedia tables in edit mode by any column",
   
-  "permissions": [
-    "activeTab"
-  ],
   
   "content_scripts": [
     {
